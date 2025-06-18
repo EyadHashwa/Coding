@@ -1,0 +1,52 @@
+How to Use CSS in HTML
+----------------------
+
+This file shows you how to use CSS in your HTML files.
+
+1. Internal CSS (using the <style> tag in the <head>):
+
+<!doctype html>
+<html>
+<head>
+    <title>Your Title</title>
+    <style>
+        h1 {
+            color: blue;
+            font-family: Arial, sans-serif;
+            font-size: 32px;
+        }
+        p {
+            color: green;
+            font-size: 20px;
+        }
+        /* You can add more selectors, classes, and IDs here */
+    </style>
+</head>
+<body>
+    <h1>This is a heading</h1>
+    <p>This is a paragraph styled with internal CSS.</p>
+</body>
+</html>
+
+2. Inline CSS (using the style attribute directly):
+
+<p style="color: red; font-size: 18px; font-family: Verdana, sans-serif;">
+    This is a paragraph with inline CSS.
+</p>
+
+3. External CSS (linking to a .css file):
+
+<!-- In your HTML <head>: -->
+<link rel="stylesheet" href="style.css">
+
+/* In your style.css file: */
+body {
+    background-color: #f0f0f0;
+}
+h1 {
+    color: purple;
+}
+
+----------------------
+Tip: Use classes and IDs for more control and to avoid repeating styles.
+----------------------
