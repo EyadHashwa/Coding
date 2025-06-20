@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Second Document</title>
+    <title>Inline CSS Example</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
@@ -20,12 +20,11 @@
             text-align: center;
             font-family: Arial, sans-serif;
         }
-        .button-link {
+        .button-link, .download-link {
             display: block;
-            width: 200px;
-            margin: 30px auto 10px auto;
+            width: 250px;
+            margin: 20px auto;
             padding: 12px 0;
-            background: #007bff;
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -35,31 +34,18 @@
             font-family: Arial, sans-serif;
             cursor: pointer;
             transition: background 0.2s;
+        }
+        .button-link {
+            background: #007bff;
         }
         .button-link:hover {
             background: #0056b3;
         }
         .download-link {
-            display: block;
-            width: 350px;
-            margin: 0 auto 30px auto;
-            padding: 12px 0;
             background: #28a745;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            text-align: center;
-            font-size: 18px;
-            font-family: Arial, sans-serif;
-            cursor: pointer;
-            transition: background 0.2s;
         }
         .download-link:hover {
             background: #1e7e34;
-        }
-        .sans-serif {
-            font-family: Arial, Helvetica, sans-serif;
         }
         .top-message {
             text-align: center;
@@ -71,15 +57,21 @@
     </style>
 </head>
 <body>
-    <h1>How to code by CSS inline because it is more efficient!</h1>
-    <p>To use CSS inline styles, you can add the style attribute directly to the HTML elements. For example:</p>
+    <h1>How to Use Inline CSS</h1>
+    <p>To apply inline styles, use the <code>style</code> attribute directly inside an element:</p>
     <pre><code>&lt;p style="color: blue; font-size: 20px;"&gt;This is a blue paragraph.&lt;/p&gt;</code></pre>
-    <p class="sans-serif">or putting it in a style tag like this:</p>
+
+    <p class="top-message">Live example:</p>
+    <p style="color: blue; font-size: 20px;">This is a blue paragraph using inline CSS!</p>
+
+    <p>You can also use internal styles in a <code>&lt;style&gt;</code> tag like this:</p>
     <pre><code>&lt;style&gt;
-    p { color: blue; font-size: 20px; }
-    &lt;/style&gt;</code></pre>
-    <div class="top-message">This is how to put CSS in HTML inline styles!</div>
-    <a href="index.html" class="button-link">Back to Main.</a>
-    <a href="example.txt" download class="download-link">Download an Example HTML File with CSS on it!</a>
+p { color: blue; font-size: 20px; }
+&lt;/style&gt;</code></pre>
+
+    <div class="top-message">Inline CSS is good for quick edits. For larger projects, use external or internal stylesheets.</div>
+
+    <a href="index.html" class="button-link">← Back to Main</a>
+    <a href="example.html" download class="download-link">Download Example HTML File with CSS</a>
 </body>
 </html>

@@ -28,11 +28,13 @@ This file shows you how to use CSS in your HTML files.
 </body>
 </html>
 
+
 2. Inline CSS (using the style attribute directly):
 
 <p style="color: red; font-size: 18px; font-family: Verdana, sans-serif;">
     This is a paragraph with inline CSS.
 </p>
+
 
 3. External CSS (linking to a .css file):
 
